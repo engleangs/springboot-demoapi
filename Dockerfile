@@ -12,6 +12,7 @@ ENV PATH=${GRADLE_HOME}/bin:${PATH}
 # finish prepare for git and gradle
 #begin configure ssh for github
 COPY ./github_id_rsa /root/.ssh/id_rsa
+#modify the github_id_rsa by putting your own private key
 RUN chmod 700 /root/.ssh/id_rsa
 RUN echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
 RUN  touch /root/.ssh/known_hosts
