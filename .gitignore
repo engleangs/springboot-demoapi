@@ -30,3 +30,6 @@ out/
 
 ### VS Code ###
 .vscode/
+github_id_rsa
+github_id_rsa.pub
+private_key
